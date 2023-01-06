@@ -1,0 +1,22 @@
+# Conversor-de-metros-cent-metros-e-mil-metros
+escolha  = int( input("Escolha a conversão que você deseja: \n1) Metros para Centímetros\n2) Metros para milímetros\n3) Centímetros para metros\n4) Centímetros para milímetros\n5) Milímetros para metro\n6) Milímetros para centimetros\nA sua escolha é: "))    
+medida = float( input ("Digite o número da medida que deseja converter:"))
+#escolhas e seus processamentos
+if ( escolha == 1):
+    m_cm = medida*100
+    print("{} metros são {} centímetros".format(medida, m_cm))
+if ( escolha == 2):
+    m_mm = medida*1000
+    print("{} metros são {} milímetros".format(medida, m_mm))
+if ( escolha == 3):
+    cm_m = medida/10
+    print("{} centímetros são {} metros".format(medida, cm_m))
+if ( escolha == 4):
+    cm_mm = medida*10
+    print("{} centímetros são {} milímetros".format(medida, cm_mm))
+if ( escolha == 5):
+    mm_m = medida/1000
+    print("{} milímetros são {} metros".format(medida, mm_m))
+if ( escolha == 6):
+    mm_cm = medida/10
+    print("{} milímetros são {} centimetros".format(medida, mm_cm))
