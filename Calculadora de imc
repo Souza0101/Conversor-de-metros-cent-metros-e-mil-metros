@@ -1,0 +1,26 @@
+#Calcular IMC
+#Nome
+nome = input ("Qual é o seu nome? ")
+#Idade
+idade = int( input ("Qual é a sua idade? "))
+#Peso
+peso = float(input ("Qual é o seu peso? "))
+#Altura
+altura = float( input ("Qual é a sua altura? "))
+#IMC = Peso ÷ (Altura × Altura)
+imc = peso / (altura * altura)
+#saida
+print(nome,"Você tem",altura,"metros",peso,"Kg e o IMC de ",imc)
+#saida das categorias
+if(imc<18.5):
+    print("Vc esta com um peso muito abaixo do recomendado")
+if(imc>18.4 and imc<25):
+    print("Peso normal")
+if(imc>24.9 and imc<30):
+    print("Sobrepeso")
+if(imc>29.9 and imc<35):
+    print("Obesidade grau 1")
+if(imc>34.9 and imc<40):
+    print("Obesidade grau 2")
+if(imc>40):
+    print("Obbesidade Grau 3 ou Mórbida")
