@@ -9,7 +9,7 @@ if ( escolha == 2):
     m_mm = medida*1000
     print("{} metros são {} milímetros".format(medida, m_mm))
 if ( escolha == 3):
-    cm_m = medida/10
+    cm_m = medida/100
     print("{} centímetros são {} metros".format(medida, cm_m))
 if ( escolha == 4):
     cm_mm = medida*10
